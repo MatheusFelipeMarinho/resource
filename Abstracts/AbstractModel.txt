@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+
+abstract class AbstractModel extends Model
+{
+	public function scopeQuery(Builder $queryBuilder, $params = [])
+	{
+		if (!empty($params['q'])) {
+			$queryBuilder->where('name', 'like', '%' . $params['q'] . '%');
+		}
+
+		return $queryBuilder;
+	}
+}
