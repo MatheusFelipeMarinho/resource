@@ -42,7 +42,7 @@ class DomainGenerate extends Command
 
         $domain = $this->ask('Informe o dominio');
 
-        mkdir(app_path($root . "/" . lcfirst($domain)));
+        mkdir(app_path($root . "/" . lcfirst($domain)), 0755, true);
         mkdir(app_path($root . "/" . lcfirst($domain) . "/entities"));
         mkdir(app_path($root . "/" . lcfirst($domain) . "/repositories"));
         mkdir(app_path($root . "/" . lcfirst($domain) . "/services"));
@@ -178,6 +178,6 @@ class DomainGenerate extends Command
     private function runInfraStructure($domain)
     {
         Artisan::call("make:model $domain -m -f -s");
-        Artisan::call("make:controller $domain");
+        Artisan::call("make:controller" . " " . $domain . "/" . $domain . "Controller");
     }
 }
