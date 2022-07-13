@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\resource\providers;
+namespace Modules\Resource\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Modules\resource\command\DomainGenerate;
