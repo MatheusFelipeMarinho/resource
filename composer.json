@@ -1,0 +1,23 @@
+{
+    "name": "matheuscarmo/resource",
+    "type": "library",
+    "authors": [
+        {
+            "name": "MatheusFelipeMarinho",
+            "email": "matheus_fellip@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "modules\\resource\\": "./"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "modules\\resource\\providers\\ResourceServiceProvider"
+            ]
+        }
+    }
+}
