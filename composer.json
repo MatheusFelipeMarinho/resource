@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "modules\\resource\\providers\\ResourceServiceProvider"
+                "Modules\\Resource\\providers\\ResourceServiceProvider"
             ]
         }
     }
