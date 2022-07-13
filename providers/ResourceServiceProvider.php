@@ -2,8 +2,8 @@
 
 namespace Modules\resource\providers;
 
-use Modules\resource\command;
 use Illuminate\Support\ServiceProvider;
+use Modules\resource\command\DomainGenerate;
 
 class ResourceServiceProvider extends ServiceProvider
 {
