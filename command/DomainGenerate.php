@@ -38,9 +38,9 @@ class DomainGenerate extends Command
      */
     public function handle()
     {
-        $root = "domain";
+        $root = $this->ask('Informe o nome do pacote');
 
-        $domain = $this->ask('Informe o path dominio');
+        $domain = $this->ask('Informe o dominio');
 
         mkdir(app_path($root . "/" . lcfirst($domain)));
         mkdir(app_path($root . "/" . lcfirst($domain) . "/entities"));
