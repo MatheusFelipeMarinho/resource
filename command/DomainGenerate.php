@@ -38,7 +38,7 @@ class DomainGenerate extends Command
      */
     public function handle()
     {
-        $root = "braip";
+        $root = "domain";
 
         $domain = $this->ask('Informe o path dominio');
 
