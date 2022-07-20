@@ -1,3 +1,3 @@
-# intall
+# install
 
 composer require matheuscarmo/resource
